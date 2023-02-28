@@ -9,11 +9,12 @@ function collect(val) {
   // birinchi belgisi ishora bo'lishini oldini olish
   let isFirstSign = res.value == "" && signs.includes(val);
 
-  // ishoralar ketma ketligining oldini olish
+  // ishoralar ketma-ketl yozlishining oldini olish
   let isSignSequence = signs.includes(last) && signs.includes(val);
 
   isFirstSign || isSignSequence || (res.value += val);
 }
+
 function getResult() {
   if (res.value == "" || signs.includes(res.value.at(-1))) {
     alert("Iltimos to'ldiring !");
@@ -21,9 +22,11 @@ function getResult() {
     res.value = eval(res.value);
   }
 }
+
 function clearRes() {
   res.value = "";
 }
+
 function back() {
   res.value = res.value.slice(0, -1);
 }
@@ -46,5 +49,3 @@ res.addEventListener("keypress", function (e) {
 function isAvailable(val) {
   return signs.includes(val) || numbers.includes(val);
 }
-
-console.log(res.value);
