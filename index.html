@@ -5,31 +5,36 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="main">
-      <input type="text" id="res" disabled />
-      <div class="buttons">
-        <input type="button" value="C" onclick="clearRes()" />
-        <input type="button" value="%" onclick="collect('%')" />
-        <input type="button" value="←" onclick="back('←')" />
-        <input type="button" value="/" onclick="collect('/')" />
-        <input type="button" value="7" onclick="collect('7')" />
-        <input type="button" value="8" onclick="collect('8')" />
-        <input type="button" value="9" onclick="collect('9')" />
-        <input type="button" value="x" onclick="collect('*')" />
-        <input type="button" value="4" onclick="collect('4')" />
-        <input type="button" value="5" onclick="collect('5')" />
-        <input type="button" value="6" onclick="collect('6')" />
-        <input type="button" value="-" onclick="collect('-')" />
-        <input type="button" value="1" onclick="collect('1')" />
-        <input type="button" value="2" onclick="collect('2')" />
-        <input type="button" value="3" onclick="collect('3')" />
-        <input type="button" value="+" onclick="collect('+')" />
-        <input type="button" value="00" onclick="collect('00')" />
-        <input type="button" value="0" onclick="collect('0')" />
-        <input type="button" value="." onclick="collect('.')" />
-        <input type="button" value="=" onclick="getResult()" />
+    <nav>
+      <h1>Abdulaziz Programmer</h1>
+    </nav>
+    <main>
+      <div class="main">
+        <input type="text" id="res" disabled />
+        <div class="buttons">
+          <input type="button" value="C" onclick="clearRes()" />
+          <input type="button" value="%" onclick="collect('%')" />
+          <input type="button" value="←" onclick="back('←')" />
+          <input type="button" value="/" onclick="collect('/')" />
+          <input type="button" value="7" onclick="collect('7')" />
+          <input type="button" value="8" onclick="collect('8')" />
+          <input type="button" value="9" onclick="collect('9')" />
+          <input type="button" value="x" onclick="collect('*')" />
+          <input type="button" value="4" onclick="collect('4')" />
+          <input type="button" value="5" onclick="collect('5')" />
+          <input type="button" value="6" onclick="collect('6')" />
+          <input type="button" value="-" onclick="collect('-')" />
+          <input type="button" value="1" onclick="collect('1')" />
+          <input type="button" value="2" onclick="collect('2')" />
+          <input type="button" value="3" onclick="collect('3')" />
+          <input type="button" value="+" onclick="collect('+')" />
+          <input type="button" value="00" onclick="collect('00')" />
+          <input type="button" value="0" onclick="collect('0')" />
+          <input type="button" value="." onclick="collect('.')" />
+          <input type="button" value="=" onclick="getResult()" />
+        </div>
       </div>
-    </div>
+    </main>
     <script src="main.js"></script>
   </body>
 </html>

@@ -13,7 +13,6 @@ function collect(val) {
   let isSignSequence = signs.includes(last) && signs.includes(val);
 
   isFirstSign || isSignSequence || (res.value += val);
-  console.log(res.value, val);
 }
 function getResult() {
   if (res.value == "" || signs.includes(res.value.at(-1))) {
